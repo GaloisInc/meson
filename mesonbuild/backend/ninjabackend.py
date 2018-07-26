@@ -1670,12 +1670,10 @@ int dummy;
         description = ' description = Compiling Rust source $in.\n'
         depfile = ' depfile = $targetdep\n'
 
-        depstyle = ' deps = gcc\n'
         outfile.write(rule)
         outfile.write(command)
         outfile.write(description)
         outfile.write(depfile)
-        outfile.write(depstyle)
         outfile.write('\n')
 
     def generate_swift_compile_rules(self, compiler, outfile):
